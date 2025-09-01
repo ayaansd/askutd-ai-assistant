@@ -16,30 +16,7 @@ Provides citations to original sources for transparency.
 
 🛠️ Architecture & Flow
 <img width="558" height="608" alt="image" src="https://github.com/user-attachments/assets/9c6dd2ec-1dd0-45de-9e2d-c77b0a8ddb58" />
-
-flowchart TD
-  subgraph Frontend [Frontend – React (CDN)]
-    UI[Input box + Ask button]
-    OUT[Answer + Sources display]
-  end
-
-  subgraph Backend [Backend – FastAPI + LangChain]
-    A[FastAPI REST API]
-    E[Embedding Builder (FAISS)]
-    Q[Q&A Bot – Retriever + LLM]
-  end
-
-  subgraph Data [Local Data Sources]
-    D1[ISSO CPT/OPT Notes]
-    D2[Academic Calendar]
-    D3[Registrar FAQs]
-  end
-
-  UI -->|POST /ask| A --> Q
-  A -->|POST /embed| E
-  E --> D1 & D2 & D3
-  Q --> OUT
-
+ 
 Flow
 
 Text snippets from UTD pages are stored in /backend/data/*.txt.
