@@ -1,0 +1,9 @@
+uvicorn==0.30.6
+fastapi==0.114.2
+python-dotenv==1.0.1
+openai==1.43.0
+langchain==0.2.14
+langchain-openai==0.1.22
+faiss-cpu==1.8.0.post1
+tiktoken==0.7.0
+pytest==8.3.2
