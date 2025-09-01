@@ -15,6 +15,8 @@ Answers based on curated UTD text snippets (not random web content).
 Provides citations to original sources for transparency.
 
 🛠️ Architecture & Flow
+<img width="558" height="608" alt="image" src="https://github.com/user-attachments/assets/9c6dd2ec-1dd0-45de-9e2d-c77b0a8ddb58" />
+
 flowchart TD
   subgraph Frontend [Frontend – React (CDN)]
     UI[Input box + Ask button]
